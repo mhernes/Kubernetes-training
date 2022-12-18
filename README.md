@@ -1,4 +1,4 @@
-# Kubernetes-training for internal sales employees
+# Kubernetes-training for internal sales engineer team
 here you can find the necessary code for some exercises. 
 Specifically the exercises that requires any resource from this repository are:
 * Exercise 2: Creating my first pod
