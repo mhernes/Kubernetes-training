@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: deployment-frontend
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: deployment-frontend
+ template:
+  metadata:
+   labels:
+    app: deployment-frontend
+  spec:
+   containers:
+   - name: nginx
+     image: nginx:1.19.1
+     ports:
+     - containerPort: 80
