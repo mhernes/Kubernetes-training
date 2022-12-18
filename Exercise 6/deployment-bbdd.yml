@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: deployment-bbdd
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: deployment-bbdd
+ template:
+  metadata:
+   labels:
+    app: deployment-bbdd
+  spec:
+   containers:
+   - name: nginx
+     image: nginx:1.19.1
+     ports:
+     - containerPort: 80
